@@ -1,6 +1,6 @@
 {
   "name": "@elricb/webpack-add-assets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Include additional assets with webpack config",
   "license": "MIT",
   "repository": {
