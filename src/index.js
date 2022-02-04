@@ -1,6 +1,6 @@
-const fs = require("fs");
-const path = require("path");
-const { RawSource } = require("webpack-sources");
+import fs from "fs";
+import { RawSource } from "webpack-sources";
+
 const NAME = "WebpackAddAssets";
 
 class WebpackAddAssets {
@@ -22,4 +22,4 @@ class WebpackAddAssets {
   }
 }
 
-module.exports = WebpackAddAssets;
+export default WebpackAddAssets;
