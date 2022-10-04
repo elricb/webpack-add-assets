@@ -1,3 +1,6 @@
+//
+// https://webpack.js.org/api/compilation-hooks/#additionalassets
+//
 import fs from "fs";
 import { RawSource } from "webpack-sources";
 
@@ -21,5 +24,20 @@ class WebpackAddAssets {
     });
   }
 }
+
+// New method to try
+// compilation.hooks.additionalAssets.tapAsync('MyPlugin', (callback) => {
+//   download('https://img.shields.io/npm/v/webpack.svg', function (resp) {
+//     if (resp.status === 200) {
+//       compilation.assets['webpack-version.svg'] = toAsset(resp);
+//       callback();
+//     } else {
+//       callback(
+//         new Error('[webpack-example-plugin] Unable to download the image')
+//       );
+//     }
+//   });
+// });
+
 
 export default WebpackAddAssets;
